@@ -1,0 +1,13 @@
+.dashboard {
+  min-height: 100vh;
+  background: #f7f6ff;
+}
+
+.dashboard-body {
+  display: flex;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 2rem;
+}/*# sourceMappingURL=Dashboard.css.map */

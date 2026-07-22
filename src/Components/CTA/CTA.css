@@ -1,0 +1,97 @@
+.cta {
+  width: 100%;
+  padding: 90px 20px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.cta-container h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #4f46c7;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.heart {
+  font-size: 36px;
+}
+
+.cta-container p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.7;
+  max-width: 850px;
+  margin: auto;
+}
+
+.cta-buttons {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.primary-btn,
+.secondary-btn {
+  width: 165px;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background: #5b3fd0;
+  color: white;
+  border: none;
+  box-shadow: 0 8px 18px rgba(91, 63, 208, 0.25);
+}
+
+.secondary-btn {
+  background: white;
+  color: #5b3fd0;
+  border: 2px solid #5b3fd0;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+  .cta {
+    padding: 70px 20px;
+  }
+  .cta-container h2 {
+    font-size: 30px;
+    flex-wrap: wrap;
+  }
+  .heart {
+    font-size: 28px;
+  }
+  .cta-container p {
+    font-size: 18px;
+  }
+  .cta-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    max-width: 280px;
+    font-size: 20px;
+    height: 56px;
+  }
+}/*# sourceMappingURL=CTA.css.map */

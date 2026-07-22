@@ -1,0 +1,68 @@
+.features {
+  padding: 6rem 4rem;
+  background: #ffffff;
+}
+
+.features-heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.features-heading h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color:#5b3cc4;
+}
+
+.features-heading p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.feature-card {
+   background: white;
+  border: 1px solid #ececec;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(91, 60, 196, 0.12);
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1.5rem;
+  background: #f3efff;
+  color: #5b3cc4;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+ color: #ed73d9
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 1.2rem;
+}

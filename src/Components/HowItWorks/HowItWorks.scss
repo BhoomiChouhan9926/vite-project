@@ -1,0 +1,82 @@
+.how-it-works{
+    padding: 6rem 4rem;
+    background: #faf8ff;
+}
+
+.how-heading{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.how-heading h2{
+    font-size: 2.8rem;
+    color: #5b3cc4;
+    margin-bottom: 1rem;
+}
+
+.how-heading p{
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.steps-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.step-card{
+     position: relative;
+    width: 240px;
+    height: 280px;
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: .3s;
+}
+
+.step-card:hover{
+    transform: translateY(-8px);
+}
+
+.step-number{
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #5b3cc4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.step-icon{
+    font-size: 3rem;
+    margin: 2rem 0 1rem;
+}
+
+.step-card h3{
+    margin-bottom: 1rem;
+    color: #ed73d9
+}
+
+.step-card p{
+    color: #666;
+    line-height: 1.6;
+}
+
+.arrow{
+    font-size: 2rem;
+    color: #5b3cc4;
+    font-weight: bold;
+}
