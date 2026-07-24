@@ -1,6 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './DashboardNav.scss'
+import {useNavigate} from 'react-router-dom'
+import { getMe } from '../../Services/AuthServices'
 const DashboardNav = () => {
+  const navigate = useNavigate();
+  
+  const [user , setuser] = useState(null)
+
+
+  useEffect(()=>{
+    fetchData()
+  },[])
+  const fetchData =async ()=>{
+    try {
+      const data = await getMe();
+      console.log(data)
+      setuser(data)
+    }catch(err){
+      console.log(err)
+    }
+  }
   return (
     <nav className="dashboard-navbar">
 
@@ -17,7 +36,8 @@ const DashboardNav = () => {
 
       <div className="profile">
         <span>
-          Hello, Bhoomi👋
+          Hello,{user ? user.name : "User"} 👋
+
         </span>
       </div>
 

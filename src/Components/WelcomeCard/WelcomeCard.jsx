@@ -1,7 +1,9 @@
 import React from "react";
 import "./WelcomeCard.scss";
-
+import { useNavigate } from "react-router-dom";
+import Button from '../Button/Button.jsx'
 const WelcomeCard = () => {
+  const navigate = useNavigate();
   return (
     <div className="welcome-card">
 
@@ -11,9 +13,11 @@ const WelcomeCard = () => {
         Continue creating beautiful memories with MemoryNest.
       </p>
 
-      <button>
+      {/* <button>
         + Create Scrapbook
-      </button>
+      </button> */}
+      <Button text = "+ Create Scrapbook"
+      onClick ={ ()=>{navigate('/create-scrapbook')}}/>
 
     </div>
   );
