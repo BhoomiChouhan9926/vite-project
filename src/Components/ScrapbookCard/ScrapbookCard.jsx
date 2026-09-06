@@ -1,8 +1,14 @@
 import React from 'react'
 import './ScrapbookCard.scss'
+import { useNavigate } from 'react-router-dom'
 const ScrapbookCard = ({book}) => {
+  const navigate = useNavigate();
   return (
- <div className="scrapbook-card">
+ <div className="scrapbook-card"
+ onClick={()=>{
+   navigate(`/scrapbook/${book._id}`)
+ }}
+ >
 
       <img
         src={book.coverImg}

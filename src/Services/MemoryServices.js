@@ -20,3 +20,9 @@ export const getScrapbooks = async()=>{
   const response = await api.get('/scrapbook/getscrapbook');
   return response;
 }
+// this is the service to get a single scrapbook 
+export const getSingleScrapbook  = async(id)=>{
+  const response = await  api.get(`/scrapbook/${id}`);
+  return response;
+
+} 

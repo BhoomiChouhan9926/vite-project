@@ -1,0 +1,110 @@
+.letter-layout { display: grid; grid-template-columns: 1.3fr 1fr; gap: 28px; width: 100%; height: calc(100vh - 120px); }
+.letters-container {
+  background: #fff;
+  border-radius: 24px;
+  padding: 24px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.letters-header {
+  margin-bottom: 20px;
+
+  h2 {
+    color: #5b3fd0;
+    font-size: 28px;
+  }
+}
+
+.letters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.letter-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #faf8ff;
+  border: 2px solid #ebe7ff;
+  border-radius: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  &:hover {
+    border-color: #6b46ff;
+    transform: translateY(-2px);
+  }
+}
+
+.letter-icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #ffd9f3, #f2e8ff);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.letter-info {
+  flex: 1;
+
+  h3 {
+    margin: 0 0 6px;
+    color: #111827;
+    font-size: 18px;
+  }
+
+  p {
+    margin: 0 0 6px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  span {
+    color: #6b46ff;
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+.arrow {
+  font-size: 28px;
+  color: #8b7fe8;
+}
+.create-letter-btn{
+  background: #6846e8;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px 0 15px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #5837d1;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(104, 70, 232, 0.25);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+}
+
+
+.letter-editor { background: #ffffff; border-radius: 28px; padding: 28px; box-shadow: 0 8px 24px rgba(91, 63, 208, 0.08); display: flex; flex-direction: column; gap: 18px; h2 { color: #5b3fd0; font-size: 30px; font-weight: 700; } input, textarea { width: 100%; border: 2px solid #ebe7ff; border-radius: 18px; padding: 16px 18px; font-size: 16px; outline: none; transition: border-color 0.2s ease; background: #fff; } input:focus, textarea:focus { border-color: #6b46ff; } textarea { flex: 1; min-height: 420px; resize: vertical; line-height: 1.7; } }
+
+
+.editor-buttons { display: flex; gap: 16px; margin-top: 10px; } .update-btn, .delete-btn { border: none; border-radius: 16px; padding: 14px 24px; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.25s ease; } .update-btn { background: linear-gradient(135deg, #6b46ff, #5b3fd0); color: #fff; &:hover { transform: translateY(-1px); box-shadow: 0 10px 20px rgba(107, 70, 255, 0.22); } } .delete-btn { background: #fff; color: #e53e5e; border: 2px solid #ffd1da; &:hover { background: #fff5f7; } }
